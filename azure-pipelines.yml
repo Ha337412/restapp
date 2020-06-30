@@ -9,13 +9,13 @@ trigger:
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: 'f212c87b-c645-442f-b196-7a7338c52e23'
+  azureSubscription: 'adc31dcd-e27f-4537-820b-93213c7a9901'
   
   # Web app name
   webAppName: 'test-java-devops'
 
   # Environment name
-  environmentName: 'hello-world-rest-api-in28minutes'
+  environmentName: 'test-java-devops'
   
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -60,7 +60,7 @@ stages:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: hello-world-rest-api-in28minutes'
+            displayName: 'Azure Web App Deploy: webapp-helloworld-java'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
