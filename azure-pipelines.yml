@@ -7,6 +7,8 @@ trigger:
 - master
 
 variables:
+  # Azure Resource Manager connection created during pipeline creation
+  azureSubscription: 'Essai gratuit (f212c87b-c645-442f-b196-7a7338c52e23)'
 
 
   # Web app name
